@@ -22,10 +22,16 @@ public  class Usuario {
        
    }
    //CONSTRUCTOR CON PARAMETROS 
-
-    public Usuario(int id_usuario, String nombre_u, String nombre_p, String apellido_p, String correo, String contra) {
-        
-        this.id_usuario=id_usuario;
+   /**
+    * 
+    * @param nombre_u
+    * @param nombre_p
+    * @param apellido_p
+    * @param correo
+    * @param contra 
+    */
+    public Usuario( String nombre_u, String nombre_p, String apellido_p, String correo, String contra) {
+ 
         this.nombre_u = nombre_u;
         this.nombre_p = nombre_p;
         this.apellido_p = apellido_p;
@@ -34,55 +40,92 @@ public  class Usuario {
     }
    
 //GETTERS Y SETTERS 
- 
+    
+    /**
+     * 
+     * @return 
+     */
     public int getId_usuario() {
         return id_usuario;
     }
-
+    /**
+     * 
+     * @param id_usuario 
+     */
     public void setId_usuario(int id_usuario) {
         this.id_usuario = id_usuario;
     }
-    
+    /**
+     * 
+     * @return 
+     */
     public String getNombre_u() {
         return nombre_u;
     }
-
+    /**
+     * 
+     * @param nombre_u 
+     */
     public void setNombre_u(String nombre_u) {
         this.nombre_u = nombre_u;
     }
-
+    /**
+     * 
+     * @return 
+     */
     public String getNombre_p() {
         return nombre_p;
     }
-
+    /**
+     * 
+     * @param nombre_p 
+     */
     public void setNombre_p(String nombre_p) {
         this.nombre_p = nombre_p;
     }
-
+    /**
+     * 
+     * @return 
+     */
     public String getApellido_p() {
         return apellido_p;
     }
-
+    /**
+     * 
+     * @param apellido_p 
+     */
     public void setApellido_p(String apellido_p) {
         this.apellido_p = apellido_p;
     }
-
+    /**
+     * 
+     * @return 
+     */
     public String getCorreo() {
         return correo;
     }
-
+    /**
+     * 
+     * @param correo 
+     */
     public void setCorreo(String correo) {
         this.correo = correo;
     }
-
+    /**
+     * 
+     * @return 
+     */
     public String getContra() {
         return contra;
     }
-
+    /**
+     * 
+     * @param contra 
+     */
     public void setContra(String contra) {
         this.contra = contra;
     }
-    
+       
 
    
     /**
@@ -122,7 +165,7 @@ public  class Usuario {
      @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Usuario{id_usuario=").append(id_usuario);
+        sb.append("Usuario{ id_usuario=").append(id_usuario);
         sb.append(", nombre_u=").append(nombre_u);
         sb.append(", nombre_p=").append(nombre_p);
         sb.append(", apellido_p=").append(apellido_p);

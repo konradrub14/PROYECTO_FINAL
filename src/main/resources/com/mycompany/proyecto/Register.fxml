@@ -12,7 +12,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto.RegisterController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #000;">
          <children>
@@ -23,7 +23,7 @@
             </Text>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="523.0" prefWidth="818.0" style="-fx-background-color: #38E48C;">
+      <AnchorPane prefHeight="617.0" prefWidth="825.0" style="-fx-background-color: #38E48C;">
          <children>
             <TextField fx:id="fieldNOMBREU" layoutX="158.0" layoutY="115.0" style="-fx-background-color: #F3EE5C;" />
             <TextField fx:id="fieldNOMBRE" layoutX="158.0" layoutY="264.0" style="-fx-background-color: #F3EE5C;" />
@@ -61,11 +61,7 @@
             </Text>
             <Button fx:id="REGISTRARSE" layoutX="186.0" layoutY="456.0" mnemonicParsing="false" onAction="#Registrarse" text="REGISTRARSE" />
             <Button fx:id="volver" layoutX="202.0" layoutY="501.0" mnemonicParsing="false" onAction="#BotonVolver" text="VOLVER" />
-            <ImageView fx:id="imagen" fitHeight="466.0" fitWidth="323.0" layoutX="500.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../img/logo_large.png" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="imagen" fitHeight="466.0" fitWidth="323.0" layoutX="500.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
             <TextField fx:id="fieldID" layoutX="156.0" layoutY="49.0" style="-fx-background-color: #F3EE5C;" />
             <Text layoutX="178.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID USUARIO">
                <font>

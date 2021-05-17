@@ -21,12 +21,15 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         String fxml="Login";
         FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource(fxml+ ".fxml"));
-        scene = new Scene(fxmlLoader.load(), 640, 480);
+        scene = new Scene(fxmlLoader.load(), 740, 580);
         stage.setScene(scene);
         stage.show();
         // Give the controller access to the main app.
         LoginController controller= fxmlLoader.getController();
         fxmlLoader.setController(controller);
+        controller.loadImage();
+        controller.loadImage2();
+        
         
     }
     static void loadSegundaPantalla() throws IOException{
@@ -46,6 +49,8 @@ public class App extends Application {
        RegisterController controller= new RegisterController(user);
       fxmlLoader.setController(controller);
         scene.setRoot(fxmlLoader.load());
+        controller.loadImage();
+        
     }
     
 

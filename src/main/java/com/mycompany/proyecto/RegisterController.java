@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import com.mycompany.models.Usuario;
 import java.io.IOException;
 import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 /**
  *
@@ -55,13 +56,11 @@ public class RegisterController {
     @FXML
     private void Registrarse(){ 
         try{
-            rdao.Registrar(new Usuario(Integer.parseInt(fieldID.getText()),fieldNOMBREU.getText(),fieldCONTRAU.getText(),fieldNOMBRE.getText(),fieldAPELLIDO.getText(),fieldCORREO.getText()));
+            rdao.Registrar(new Usuario(fieldNOMBREU.getText(),fieldNOMBRE.getText(),fieldAPELLIDO.getText(),fieldCORREO.getText(),fieldCONTRAU.getText()));
             
-            Alert confirmacion= new Alert(Alert.AlertType.CONFIRMATION);
-            confirmacion.setTitle("Crear usuario");
-            confirmacion.setContentText("¿Quiere crear el usuario?");
+           
         } catch(SQLException ex) {
-            Alertas.mostrarError("ERROR AL CREAR EL USUARIO");
+            Alertas.mostrarError(ex.getMessage());
         }
     }
     
@@ -83,6 +82,10 @@ public class RegisterController {
         conectarBD();
     }
     
+    public void loadImage(){
+        Image img = new Image(getClass().getResourceAsStream("/img/logo_large.png"));
+        imagen.setImage(img);
+    }
     
     
    

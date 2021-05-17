@@ -12,7 +12,5 @@ package com.mycompany.models;
 public enum TiposDArticulo{
  
  Cuadro,Postal,Camiseta,Libros,Foto
-
-    
-    
+  
 }

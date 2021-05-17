@@ -46,10 +46,14 @@ public class LoginController {
     // BUTTONS
     @FXML
     private Button Register;
-    
+    /**
+     * 
+     * @throws IOException 
+     */
     @FXML
-    public void Register()throws IOException{
-        App.setRegister("Register");
+    
+    public void loadRegister()throws IOException{
+        App.loadRegister();
     }
     
     @FXML
@@ -82,6 +86,10 @@ public class LoginController {
     public void loadImage(){
         Image img = new Image(getClass().getResourceAsStream("/img/descarga.png"));
         imagen.setImage(img);
+    }
+    public void loadImage2(){
+        Image img2= new Image(getClass().getResourceAsStream("/img/images.png"));
+        imagen2.setImage(img2);
     }
    
    

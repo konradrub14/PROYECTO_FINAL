@@ -37,15 +37,13 @@ public class RegisterDAO {
     }
     //REGISTAR A UN USUARIO
     public void Registrar(Usuario user)throws SQLException{
-        String sql="{CALL spañadirUsuario (?,?,?,?,?,?)}";
-        System.out.println(sql);
+        String sql="{CALL spaddUsuario (?,?,?,?,?)}";
         PreparedStatement sentencia=conexion.prepareStatement(sql);
-        sentencia.setInt(1, user.getId_usuario());
-        sentencia.setString(2, user.getNombre_u());
-        sentencia.setString(3, user.getNombre_p());
-        sentencia.setString(4, user.getApellido_p());
-        sentencia.setString(5, user.getCorreo());
-        sentencia.setString(6, user.getContra());
+        sentencia.setString(1, user.getNombre_u());
+        sentencia.setString(2, user.getNombre_p());
+        sentencia.setString(3, user.getApellido_p());
+        sentencia.setString(4, user.getCorreo());
+        sentencia.setString(5, user.getContra());
         sentencia.executeUpdate();  
     }
    
