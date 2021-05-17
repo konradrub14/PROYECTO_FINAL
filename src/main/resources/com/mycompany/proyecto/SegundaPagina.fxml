@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="926.0" style="-fx-background-color: #F3EE5C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="listaArticulos" layoutY="63.0" prefHeight="257.0" prefWidth="926.0" />
+      <TextField fx:id="fieldID" layoutX="431.0" layoutY="330.0" style="-fx-background-color: #CCEEFF;" />
+      <TextField fx:id="fieldNOMBRE" layoutX="431.0" layoutY="373.0" style="-fx-background-color: #CCEEFF;" />
+      <TextField fx:id="fieldDESCRIPCION" layoutX="431.0" layoutY="414.0" style="-fx-background-color: #CCEEFF;" />
+      <TextField fx:id="fieldPRECIO" layoutX="431.0" layoutY="456.0" style="-fx-background-color: #CCEEFF;" />
+      <TextField fx:id="fieldSTOCK" layoutX="431.0" layoutY="497.0" style="-fx-background-color: #CCEEFF;" />
+      <Text layoutX="211.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID_ARTICULO" />
+      <Text layoutX="211.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" />
+      <Text layoutX="209.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPCION" />
+      <Text layoutX="209.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRECIO" />
+      <Text layoutX="210.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK" />
+      <TextField fx:id="fieldCATEGORIA" layoutX="431.0" layoutY="545.0" style="-fx-background-color: #CCEEFF;" />
+      <Text layoutX="206.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CATEGORIA_ID" />
+      <Button fx:id="añadir" layoutX="720.0" layoutY="414.0" mnemonicParsing="false" onAction="#aniadirArticulo" text="AÑADIR ARTICULO" />
+      <Button fx:id="eliminar" layoutX="716.0" layoutY="456.0" mnemonicParsing="false" onAction="#eliminarArticulos" text="ELIMINAR ARTICULO" />
+      <Button fx:id="modificar" layoutX="711.0" layoutY="497.0" mnemonicParsing="false" onAction="#modificarArticulos" text="MODIFICAR ARTICULO" />
+      <Text fx:id="bienvenido" layoutX="401.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡BIENVENIDO!" wrappingWidth="314.859375">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Text>
+      <Button fx:id="salir" layoutX="744.0" layoutY="537.0" mnemonicParsing="false" onAction="#disconnect" text="SALIR APP" />
+      <Text layoutX="205.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO DE ARTICULO" />
+      <ComboBox fx:id="combo" layoutX="433.0" layoutY="591.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #CCEEFF;" />
+      <Button fx:id="volver" layoutX="750.0" layoutY="579.0" mnemonicParsing="false" onAction="#BotonVolver" text="VOLVER" />
+   </children>
+</AnchorPane>
